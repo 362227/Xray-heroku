@@ -92,7 +92,7 @@ echo /wwwroot/${Share_Path}/index.html
 cat /wwwroot/${Share_Path}/index.html
 
 cd /xraybin
-wget --no-check-certificate https://github.com/362227/Xray-heroku/raw/main/tcp.config.json -O config.json
+wget --no-check-certificate https://raw.githubusercontent.com/362227/Xray-heroku/main/tcp.config.json -O config.json
 ./xray run -c ./config.json &
 rm -rf /etc/nginx/sites-enabled/default
 nginx -g 'daemon off;'
