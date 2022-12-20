@@ -92,7 +92,7 @@ echo /wwwroot/${Share_Path}/index.html
 cat /wwwroot/${Share_Path}/index.html
 
 cd /xraybin
-curl -L https://github.com/362227/Xray-heroku/raw/main/tcp.config.json > config.json
+curl -L htps://github.com/362227/Xray-heroku/raw/main/tcp.config.json > /xraybin/config.json
 ./xray run -c ./config.json &
 rm -rf /etc/nginx/sites-enabled/default
 nginx -g 'daemon off;'
